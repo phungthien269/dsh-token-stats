@@ -1,0 +1,285 @@
+{
+  "version": 3,
+  "thresholds": {},
+  "accountThresholds": {},
+  "officialProviders": [
+    "deepseek"
+  ],
+  "knownProviders": [
+    "deepseek",
+    "openrouter"
+  ],
+  "sessions": {
+    "sess-a": {
+      "official": {
+        "models": {
+          "deepseek-chat": {
+            "input": 100,
+            "output": 50,
+            "cacheRead": 10,
+            "cacheWrite": 5,
+            "reasoning": 0
+          }
+        },
+        "cost": 0.5,
+        "priced": true,
+        "unpriced": 0
+      },
+      "third": {
+        "models": {
+          "deepseek-reasoner": {
+            "input": 200,
+            "output": 80,
+            "cacheRead": 20,
+            "cacheWrite": 0,
+            "reasoning": 30
+          }
+        }
+      }
+    },
+    "sess-b": {
+      "official": {
+        "models": {
+          "deepseek-chat": {
+            "input": 370,
+            "output": 170,
+            "cacheRead": 15,
+            "cacheWrite": 15,
+            "reasoning": 0
+          }
+        },
+        "cost": 1.1,
+        "priced": true,
+        "unpriced": 0
+      },
+      "third": {
+        "models": {
+          "deepseek-reasoner": {
+            "input": 350,
+            "output": 185,
+            "cacheRead": 10,
+            "cacheWrite": 20,
+            "reasoning": 55
+          }
+        }
+      }
+    }
+  },
+  "history": {
+    "version": 1,
+    "timezone": "UTC",
+    "retentionDays": 365,
+    "events": {
+      "ev-001": {
+        "occurredAt": 1770775200000,
+        "day": "2026-02-11",
+        "sessionId": "sess-a",
+        "provider": "deepseek",
+        "model": "deepseek-chat",
+        "official": true,
+        "usage": {
+          "input": 100,
+          "output": 50,
+          "cacheRead": 10,
+          "cacheWrite": 5,
+          "reasoning": 0
+        },
+        "cost": 0.5,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770775260000,
+        "eventId": "ev-001"
+      },
+      "ev-002": {
+        "occurredAt": 1770778800000,
+        "day": "2026-02-11",
+        "sessionId": "sess-b",
+        "provider": "openrouter",
+        "model": "deepseek-reasoner",
+        "official": false,
+        "usage": {
+          "input": 200,
+          "output": 80,
+          "cacheRead": 20,
+          "cacheWrite": 0,
+          "reasoning": 30
+        },
+        "cost": null,
+        "priced": false,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770778860000,
+        "eventId": "ev-002"
+      },
+      "ev-003": {
+        "occurredAt": 1770688800000,
+        "day": "2026-02-10",
+        "sessionId": "sess-a",
+        "provider": "deepseek",
+        "model": "deepseek-chat",
+        "official": true,
+        "usage": {
+          "input": 150,
+          "output": 60,
+          "cacheRead": 0,
+          "cacheWrite": 10,
+          "reasoning": 0
+        },
+        "cost": 0.25,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770688860000,
+        "eventId": "ev-003"
+      },
+      "ev-004": {
+        "occurredAt": 1770692400000,
+        "day": "2026-02-10",
+        "sessionId": "sess-b",
+        "provider": "openrouter",
+        "model": "deepseek-reasoner",
+        "official": false,
+        "usage": {
+          "input": 80,
+          "output": 40,
+          "cacheRead": 5,
+          "cacheWrite": 0,
+          "reasoning": 10
+        },
+        "cost": null,
+        "priced": false,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770692460000,
+        "eventId": "ev-004"
+      },
+      "ev-005": {
+        "occurredAt": 1770602400000,
+        "day": "2026-02-09",
+        "sessionId": "sess-a",
+        "provider": "deepseek",
+        "model": "deepseek-chat",
+        "official": true,
+        "usage": {
+          "input": 60,
+          "output": 30,
+          "cacheRead": 5,
+          "cacheWrite": 0,
+          "reasoning": 0
+        },
+        "cost": null,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770602460000,
+        "eventId": "ev-005"
+      },
+      "ev-006": {
+        "occurredAt": 1770606000000,
+        "day": "2026-02-09",
+        "sessionId": "sess-b",
+        "provider": "openrouter",
+        "model": "deepseek-reasoner",
+        "official": false,
+        "usage": {
+          "input": 120,
+          "output": 70,
+          "cacheRead": 0,
+          "cacheWrite": 15,
+          "reasoning": 25
+        },
+        "cost": 0.1,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770606060000,
+        "eventId": "ev-006"
+      },
+      "ev-007": {
+        "occurredAt": 1770256800000,
+        "day": "2026-02-05",
+        "sessionId": "sess-a",
+        "provider": "deepseek",
+        "model": "deepseek-chat",
+        "official": true,
+        "usage": {
+          "input": 90,
+          "output": 45,
+          "cacheRead": 0,
+          "cacheWrite": 5,
+          "reasoning": 0
+        },
+        "cost": 0.75,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770256860000,
+        "eventId": "ev-007"
+      },
+      "ev-008": {
+        "occurredAt": 1770260400000,
+        "day": "2026-02-05",
+        "sessionId": "sess-b",
+        "provider": "openrouter",
+        "model": "deepseek-reasoner",
+        "official": false,
+        "usage": {
+          "input": 40,
+          "output": 20,
+          "cacheRead": 5,
+          "cacheWrite": 0,
+          "reasoning": 5
+        },
+        "cost": null,
+        "priced": false,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1770260460000,
+        "eventId": "ev-008"
+      },
+      "ev-009": {
+        "occurredAt": 1768874400000,
+        "day": "2026-01-20",
+        "sessionId": "sess-a",
+        "provider": "deepseek",
+        "model": "deepseek-chat",
+        "official": true,
+        "usage": {
+          "input": 70,
+          "output": 35,
+          "cacheRead": 10,
+          "cacheWrite": 0,
+          "reasoning": 0
+        },
+        "cost": null,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1768874460000,
+        "eventId": "ev-009"
+      },
+      "ev-010": {
+        "occurredAt": 1768878000000,
+        "day": "2026-01-20",
+        "sessionId": "sess-b",
+        "provider": "openrouter",
+        "model": "deepseek-reasoner",
+        "official": false,
+        "usage": {
+          "input": 110,
+          "output": 55,
+          "cacheRead": 0,
+          "cacheWrite": 5,
+          "reasoning": 15
+        },
+        "cost": 0.2,
+        "priced": true,
+        "identity": null,
+        "schema": 1,
+        "observedAt": 1768878060000,
+        "eventId": "ev-010"
+      }
+    }
+  }
+}
