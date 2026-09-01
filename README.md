@@ -6,6 +6,8 @@ English · [Tiếng Việt](#tiếng-việt) · [中文](#中文)
 
 ## Features
 
+![Token Statistics dashboard](docs/screenshot.png)
+
 - **Sidebar entry "Token Statistics"** — opens a full-width dashboard in the center column (same interaction model as the Task Board plugin); works in both the expanded sidebar and the compact rail.
 - **Four summary cards** — Today / This week / This month / All time (tokens + cost when pricing data exists).
 - **Stacked bar chart** — pure SVG, one color per model, daily (30 days) / weekly (12 ISO weeks) / monthly (12 months), hover tooltips per model, K/M-scaled axis.
