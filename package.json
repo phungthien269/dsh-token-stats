@@ -1,7 +1,7 @@
 {
   "name": "dsh-token-stats",
   "description": "Token usage dashboard for the DeepSeek Harness web GUI: today / week / month totals, per-model breakdown, 30-day chart, and a built-in 4-language UI (vi/en/zh/ja). Read-only over the Wallet ledger.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "index.js",
   "license": "MIT",

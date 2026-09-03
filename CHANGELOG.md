@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1
+
+- **English is the primary language** — the dashboard opens in English unless another language is picked in the header picker; the first-run browser-language auto-detect was removed.
+
 ## 0.2.0
 
 - **Multi-language UI** — the dashboard and sidebar entry are now fully translated into Tiếng Việt, English, 中文 and 日本語. A language picker sits in the dashboard header; the choice persists in localStorage and the first-run default follows the browser language.

@@ -12,7 +12,7 @@ English · [Tiếng Việt](#tiếng-việt) · [中文](#中文)
 - **Four summary cards** — Today / This week / This month / All time (tokens + cost when pricing data exists).
 - **Stacked bar chart** — pure SVG, one color per model, daily (30 days) / weekly (12 ISO weeks) / monthly (12 months), hover tooltips per model, K/M-scaled axis.
 - **Per-model table** — input, output, cache read, total, share bar; sorted by total.
-- **4-language UI** — Tiếng Việt, English, 中文， 日本語. Language picker in the dashboard header; auto-detects the browser language on first run and remembers the choice.
+- **4-language UI** — English (primary), Tiếng Việt, 中文， 日本語. Language picker in the dashboard header; the choice is remembered.
 - **Auto-refresh** — refetches every 30 s while the dashboard is open, plus a manual refresh button.
 - **Zero dependencies, no build step** — host half is plain ESM Node; client half is a single pre-bundled CJS module.
 
